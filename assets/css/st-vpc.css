@@ -1,0 +1,74 @@
+
+/* === تنسيق نموذج الدفع نفسه === */
+#wc-st_vpc-cc-form {
+  background: transparent;   /* نخلي الخلفية شفافة لأن البطاقة ملونة */
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+}
+
+#wc-st_vpc-cc-form .form-row {
+  margin-bottom: 1rem;
+}
+
+#wc-st_vpc-cc-form label{
+  font-weight: 600;
+  font-size: 1rem;
+color: white !important;
+}
+
+#wc-st_vpc-cc-form .input-text {
+  background: rgba(255,255,255,0.9);
+  border: 2px solid #d4c2fc;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #4c1d95;
+  width: 100%;
+  transition: all .2s ease;
+}
+
+#wc-st_vpc-cc-form .input-text:focus {
+  border-color: #7f00ff;
+  box-shadow: 0 0 0 3px rgba(127,0,255,0.2);
+  outline: none;
+}
+
+/* أيقونة البطاقة داخل حقل رقم البطاقة */
+#st_vpc_card_number {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%239d4edd" viewBox="0 0 24 24" width="24" height="24"><path d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v2H2V5zm0 4h20v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9zm4 3a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+}
+
+/* صندوق اختيار وسيلة الدفع */
+.wc_payment_method.payment_method_st_vpc {
+  background: #fafafc;
+  border: 2px solid #ecebfe;
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.wc_payment_method.payment_method_st_vpc .payment_box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+  border: 2px solid #d4c2fc;
+  border-radius: 10px;
+  padding: 1rem !important;
+  margin-top: 1rem;
+  box-shadow: 0 6px 15px rgba(23, 0, 102, 0.05);
+  
+  font-weight: 600;
+}
+
+
+/* تجاوب الموبايل */
+@media (max-width: 768px) {
+
+  #st_vpc_card_number {
+    background-position: right 8px center;
+    background-size: 18px;
+  }
+}
